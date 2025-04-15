@@ -30,6 +30,12 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG") == "True"
 
 ALLOWED_HOSTS = []
+if DEBUG:
+    ALLOWED_HOSTS += [
+        "0.0.0.0",
+        "localhost",
+        "127.0.0.1",
+    ]
 
 
 # Application definition

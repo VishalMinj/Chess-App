@@ -1,0 +1,9 @@
+__pycache__
+.venv
+.python-version
+Dockerfile
+backend.md
+db.sqlite3
+uv.lock
+.env
+migrations
