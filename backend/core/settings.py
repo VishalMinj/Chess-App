@@ -52,6 +52,10 @@ INSTALLED_APPS = [
     # External extensions
     "rest_framework",
     "drf_spectacular",
+] + [
+    # Internal apps
+    "rooms",
+    "users"
 ]
 
 MIDDLEWARE = [
@@ -146,3 +150,12 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "Chess App API",
     # "DESCRIPTION": "Your project description",
 }
+
+CHANNEL_LAYERS = {
+    "default": {
+        # Only for development
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+    },
+}
+
+AUTH_USER_MODEL = "users.CustomUser"
