@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script setup></script>
 <template>
   <header class="container">
     <div class="logo">
