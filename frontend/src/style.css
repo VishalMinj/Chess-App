@@ -17,3 +17,8 @@
   width: 100%;
   padding-inline: clamp(2rem, 7.75vw, 8rem);
 }
+
+/* for dialog */
+body:has(dialog[open]) {
+  overflow: hidden;
+}
